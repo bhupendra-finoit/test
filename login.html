@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<title>Uber Thread -  Home Page</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  		<meta name="title" content="" />
+  		<meta name="description" content="Have any Business in mind. Please contact orient arcade." />
+  		<meta name="keywords" content=""/>
+  		<meta name="robots" content="" />
+ 		 <meta http-equiv="Content-Language" content="en-us" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/actions.js"></script>
+</head>
+<body>
+<div id="main_wrapper">
+	<div id="header_main">
+    	<div id="header_content">
+        	<div class="logo">
+            	<a href="index.html" title="Thirst For Threads"></a>
+            </div><!-- logo ends --> 
+            <ul class="top_right_menu">
+            	<li><a href="#" title="">Register</a></li>
+                <li><a href="#" title="">Login</a></li>
+                <li><a class="icon_bag" href="#" title="">Shoping Bag (0)</a></li>
+            </ul>
+            <div class="menu">
+                    <ul>
+                            <li><a class="inactive" href="index.html" title="This Week">This Week</a></li>
+                            <li><a class="inactive"  href="last_week.html" title="Last Week">Last Week</a></li>
+                            <li><a class="inactive" href="how_it_works.html" title="How It Works">How It Works</a></li>
+                            <li><a class="inactive" href="blog.html"  title="Blog">Blog</a></li> 
+                    </ul>                    
+        </div><!-- menu ends -->
+		<!-- main_navigation ends -->
+        </div><!-- header_content ends-->        
+    </div><!-- haeder_main ends-->
+    <div id="container">
+          <div id="login_register_container">
+          		<div class="log_form_box">
+                	<h2>Login</h2>
+                    <div style="display:none;" id="login_instruction">
+                    	 <p class="small_sub">Already have an überThread account? If so then trying logging in.</p>
+                    	<p>
+                    		<span id="show_login" class="black_button left">Login</span>
+                    	</p>
+                    </div>
+                    <form id="login_form" class="form_wrapper" method="post" action="">
+                    	<div class="error_box">
+                        	<p class="fix_error">Please re-enter your password</p>
+                            <p class="error_description">The password you entered was incorrect. Please re-enter your password.</p>
+                        </div>
+                        <p class="form_field_name"><label for="email">Email</label></p>
+                        <div><input id="email" class="log_reg_text" name="" type="text" /></div>
+                         <p class="form_field_name"><label for="password">Password</label></p>
+                        <div><input id="password" class="log_reg_text" name="" type="password" /></div>
+                        <p><a href="">Forgot Password?</a></p>
+                         <p><input type="checkbox" id="remember" name="" /><label for="remember"> Remember me on this computer</label></p>
+                         <div><input class="black_button" type="submit" value="Login"/></div>
+                    </form>
+                </div>
+                <div class="login_or_reg">OR</div>
+                <div class="log_form_box">
+                	<h2>Register</h2>
+                    <div id="reg_suggest">
+                        	<p class="small_sub">Register to join the community that defines the next fashions.</p>
+                            <p><a class="blue" href=""><b>Watch a demo video</b></a></p>
+                            <!--<ul class="white_bkg_list">
+                                <li>Join an exciting community and set the fashion trends</li>
+                                <li>Participate in weekly contests and win exciting prizes</li>
+                                <li>Get list of new products every week in your mailbox</li>
+                                <li>Review products and share your thoughts with designers</li>
+                            </ul>-->
+                            <p>
+                                <span id="reg_now" class="black_button left">Join Now</span>
+                            </p>
+                   </div>
+                   <form  style="display:none;" id="registration_form" class="form_wrapper" method="post" action="">
+                            <p class="form_field_name"><label for="email2">Email</label></p>
+                            <div><input id="email2" class="log_reg_text" name="" value="" type="text" /></div>
+                            <p class="form_field_name"><label for="password2">Password</label></p>
+                            <div><input id="password2" class="log_reg_text" name="" value="" type="password" /></div>
+                            <p class="form_field_name"><label for="re_password">Re-enter Password</label></p>
+                            <div><input id="re_password" class="log_reg_text" name="" value="" type="password" /></div>
+                            <p class="form_field_p">
+                                <label>Select Sex:</label>
+                                <input name="" value="Re-enter Password" type="radio" />&nbsp;Male &nbsp;&nbsp;
+                                <input name="" value="Re-enter Password" type="radio" />&nbsp;Female
+                            </p>
+                            <div><input class="black_button" type="submit" value="Register"/></div>
+                            <p class="form_field_p">By clicking "Register" you agree to uberThread's <a href="">Privacy Statement</a> and <a href="">Terms of Use</a>.</p>
+                   </form>
+                </div>
+          </div>  	
+    </div><!-- container ends -->
+    <div id="footer"> 
+    	<div class="col4">
+        	<h3>About Us</h3>
+        	<ul class="footer_list">
+            	<li><a href="#" title="About uT">About uT</a></li>
+                <li><a href="#" title="Contact uT">Contact uT</a></li>
+                <li><a href="#" title="Careers uT">Careers uT</a></li>
+            </ul>
+        </div>
+        <div class="col4">
+        	<h3>Customer Service</h3>
+        	<ul class="footer_list">
+            	<li><a href="#" title="Contact Info">Contact Info</a></li>
+                <li><a href="#" title="FAQs">FAQs</a></li>
+                <li><a href="#" title="Secure Shopping">Secure Shopping</a></li>
+                <li><a href="#" title="Returns and Exchanges">Returns and Exchanges</a></li>
+            </ul>
+        </div>
+        <div class="col4">
+        	<h3>uberThread Policies</h3>
+        	<ul class="footer_list">
+            	<li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                <li><a href="#" title="Terms of Service">Contact uT</a></li>
+            </ul>
+        </div>
+        <div class="col4 last">
+        	<h3>Designer Zone</h3>
+        	<ul class="footer_list">
+            	<li><a href="#" title="Designer Login">Designer Login</a></li>
+                <li><a href="#" title="Designer Registration">Designer Registration</a></li>
+            </ul>
+        </div> <br/>
+        <div class="copyright">  	
+    			Copyright &copy; 2011, LeftCo Inc., All Rights Reserverd.
+        </div>
+    </div>
+</div> <!--main_wrapper ends -->
+</body>       
+</html> 

@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<title>Uber Thread -  Checkout</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  		<meta name="title" content="" />
+  		<meta name="description" content="Have any Business in mind. Please contact orient arcade." />
+  		<meta name="keywords" content=""/>
+  		<meta name="robots" content="" />
+ 		 <meta http-equiv="Content-Language" content="en-us" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/actions.js"></script>
+</head>
+<body>
+<div id="main_wrapper">
+	<div id="header_main">
+    	<div id="header_content">
+        	<div class="logo">
+            	<a href="index.html" title="Thirst For Threads"></a>
+            </div><!-- logo ends --> 
+            <ul class="top_right_menu">
+            	<li><a href="#" title="">Register</a></li>
+                <li><a href="#" title="">Login</a></li>
+                <li><a class="icon_bag" href="#" title="">Shoping Bag (0)</a></li>
+            </ul>
+            <div class="menu">
+                    <ul>
+                            <li><a class="inactive" href="index.html" title="This Week">This Week</a></li>
+                            <li><a class="inactive"  href="last_week.html" title="Last Week">Last Week</a></li>
+                            <li><a class="inactive" href="how_it_works.html" title="How It Works">How It Works</a></li>
+                            <li><a class="inactive" href="blog.html"  title="Blog">Blog</a></li> 
+                    </ul>                    
+        </div><!-- menu ends -->
+		<!-- main_navigation ends -->
+        </div><!-- header_content ends-->        
+    </div><!-- haeder_main ends-->
+    <div id="container">
+          <div id="login_register_container">
+          		<div id="payment_detail_box">
+                	<h2 class="checkout_main_heading">Payment Details</h2>
+                    <form method="post" action="">
+                    	<div class="error_box">
+                        	<p class="fix_error">Please correct following errors</p>
+                            <ol>
+                            	<li>Enter your first name</li>
+                                <li>CVV/CVN Number- Only numeric values are allowed</li>
+                                <li>Provide card expiration date.</li>
+                            </ol>
+                        </div>
+                        <table cellpadding="0" cellspacing="0" class="checkout_form_table">
+                        	<tr>
+                            	<th style="width:27%"></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                            	<td><label for="f_name">First Name:</label></td>
+                                <td>
+                                	<input id="f_name" class="long_text_field error_field" name="" type="text" />
+                                    <p class="field_error_description">Please enter your first name</p>
+                                 </td>
+                            </tr>
+                            <tr>
+                            	<td><label for="l_name">Last Name:</label></td>
+                                <td><input id="l_name" class="long_text_field" name="" type="text" /></td>
+                            </tr>
+                            <tr>
+                            	<td><label for="card_type">Card Type:</label></td>
+                                <td>
+                                	<select id="card_type" class="long_select_field " name="" >
+                                		<option value="visa">Visa</option>
+                                        <option value="MC">Mastercard</option>
+                                        <option value="PP">Paypal</option>
+                                    </select>
+                                    <span class="secure_payment">128-bit SSL Encrypted Secure Credit Card Payment</span>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td><label for="cc_number">Credit Card Number:</label></td>
+                                <td>
+                                	<input id="cc_number" class="long_text_field" name="" type="text" />
+                                	<p class="form_field_help">The 16 digits on the front of your card.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td><label for="cc_expire">Card Expiration Date:</label></td>
+                                <td>
+                                	<select class="short_select_field error_field" name="" >
+                                		<option value="visa">Visa</option>
+                                        <option value="MC">Mastercard</option>
+                                        <option value="PP">Paypal</option>
+                                    </select>
+                                    <select class="short_select_field error_field" name="" >
+                                		<option value="visa">Visa</option>
+                                        <option value="MC">Mastercard</option>
+                                        <option value="PP">Paypal</option>
+                                    </select>
+                                    <p class="field_error_description">Please provide the card expiration date.</p>
+                                    <p class="form_field_help">The date your credit card expires. Find it on the front of your card.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td><label for="cvv_number">CVV/CVN Number:</label></td>
+                                <td>
+                                	<input id="cvv_number" class="small2_text_field" name="" type="text" />
+                                    <p class="form_field_help">The 3 digits on the back of your card</p>
+                                </td>
+                            </tr>
+                            <tr><td colspan="2"><h2 class="separator_heading">Billing Address</h2></td></tr>
+                        	<tr>
+                            	<td><label for="ba_line1">Address Line 1:</label></td>
+                                <td><input id="ba_line1" class="long_text_field" name="" type="text" /></td>
+                            </tr>
+                            <tr>
+                            	<td><label for="ba_line2">Address Line 2:</label></td>
+                                <td><input id="ba_line2" class="long_text_field" name="" type="text" /></td>
+                            </tr>
+                            <tr>
+                            	<td><label for="ba_city">City:</label></td>
+                                <td><input id="ba_city" class="long_text_field" name="" type="text" /></td>
+                            </tr>
+                            <tr>
+                            	<td><label for="ba_state">State:</label></td>
+                                <td>
+                                	<select id="ba_state" class="long_select_field" name="" >
+                                		<option value="">California</option>
+                                        <option value="">Michigan</option>
+                                        <option value="">New Jersey</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td><label for="ba_postal_code">Postal Code:</label></td>
+                                <td><input id="ba_postal_code" class="small_text_field" name="" type="text" /></td>
+                            </tr>
+                            <tr>
+                            	<td><label for="ba_phone">Phone:</label></td>
+                                <td><input id="ba_phone" class="small_text_field" name="" type="text" /></td>
+                            </tr>
+                       		<tr>
+                            	<td colspan="2"><h2 class="separator_heading">Shipping Address</h2></td>
+                            </tr>
+                            <tr>
+                            	<td colspan="2"><div id="sa_ba_check" class="left"><input id="sa_ba" class="check_shipping" name="" type="checkbox" checked="checked" /> <label for="sa_ba" id="sa_ba_label">Same as billing address</label></div></td>
+                            </tr>
+                      	</table>
+                        <table id="shipping_address_form" cellpadding="0" cellspacing="0" class="checkout_form_table">	
+                            <tr>
+                            	<th style="width:27%"></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                            	<td><label for="sa_line1">Address Line 1:</label></td>
+                                <td><input id="sa_line1" class="long_text_field" name="" type="text" /></td>
+                            </tr>
+                            <tr>
+                            	<td><label for="sa_line2">Address Line 2:</label></td>
+                                <td><input id="sa_line2" class="long_text_field" name="" type="text" /></td>
+                            </tr>
+                            <tr>
+                            	<td><label for="sa_city">City:</label></td>
+                                <td><input id="sa_city" class="long_text_field" name="" type="text" /></td>
+                            </tr>
+                            <tr>
+                            	<td><label for="sa_state">State:</label></td>
+                                <td>
+                                	<select id="sa_state" class="long_select_field" name="" >
+                                		<option value="">California</option>
+                                        <option value="">Michigan</option>
+                                        <option value="">New Jersey</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td><label for="sa_postal_code">Postal Code:</label></td>
+                                <td><input id="sa_postal_code" class="small_text_field" name="" type="text" /></td>
+                            </tr>
+                            <tr>
+                            	<td><label for="sa_phone">Phone:</label></td>
+                                <td><input id="sa_phone" class="small_text_field" name="" type="text" /></td>
+                            </tr>
+                       	</table>
+                        <div class="checkout_proceed"><input class="black_button right" type="submit" value="Review Order"/></div>
+                    </form>
+                </div>
+                <div id="bid_summary_box">
+                	<h2>Bid Summary</h2>
+                    <table class="bid_summary_table" cellpadding="0" cellspacing="0">
+                    	<tr>
+                        	<th style="width:40%;"></th>
+                            <th style="width:55%;"></th>
+                        </tr>
+                        <tr>
+                        	<td><b>Bid Total:</b></td>
+                            <td>$88.60</td>
+                        </tr>
+                        <tr>
+                        	<td><b>Shipping:</b></td>
+                            <td>$10.00</td>
+                        </tr>
+                        <tr>
+                        	<td><b>Estimated tax:</b></td>
+                            <td>$12.00</td>
+                        </tr>
+                        <tr>
+                        	<td class="total_seperator"><p class="bid_total">Total</p></td>
+                            <td class="total_seperator"><p class="bid_total">$112.60</p></td>
+                        </tr>
+                    </table>
+                </div>
+          </div>  	
+    </div><!-- container ends -->
+    <div id="footer"> 
+    	<div class="col4">
+        	<h3>About Us</h3>
+        	<ul class="footer_list">
+            	<li><a href="#" title="About uT">About uT</a></li>
+                <li><a href="#" title="Contact uT">Contact uT</a></li>
+                <li><a href="#" title="Careers uT">Careers uT</a></li>
+            </ul>
+        </div>
+        <div class="col4">
+        	<h3>Customer Service</h3>
+        	<ul class="footer_list">
+            	<li><a href="#" title="Contact Info">Contact Info</a></li>
+                <li><a href="#" title="FAQs">FAQs</a></li>
+                <li><a href="#" title="Secure Shopping">Secure Shopping</a></li>
+                <li><a href="#" title="Returns and Exchanges">Returns and Exchanges</a></li>
+            </ul>
+        </div>
+        <div class="col4">
+        	<h3>uberThread Policies</h3>
+        	<ul class="footer_list">
+            	<li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                <li><a href="#" title="Terms of Service">Contact uT</a></li>
+            </ul>
+        </div>
+        <div class="col4 last">
+        	<h3>Designer Zone</h3>
+        	<ul class="footer_list">
+            	<li><a href="#" title="Designer Login">Designer Login</a></li>
+                <li><a href="#" title="Designer Registration">Designer Registration</a></li>
+            </ul>
+        </div> <br/>
+        <div class="copyright">  	
+    			Copyright &copy; 2011, LeftCo Inc., All Rights Reserverd.
+        </div>
+    </div>
+</div> <!--main_wrapper ends -->
+</body>       
+</html> 
