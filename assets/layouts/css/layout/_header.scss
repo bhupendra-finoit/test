@@ -1,0 +1,18 @@
+.app-header{
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	height: 60px;
+	padding: 0 20px;
+	position: fixed;
+	@include flexbox;
+	@include align-items(center);
+	background: $regular-bkg;
+	.app-logo{
+		@include flex(1);
+		h2{
+			color: $regular-font-color;
+		}
+	}
+}

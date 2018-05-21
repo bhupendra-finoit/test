@@ -1,0 +1,74 @@
+.app-contents{
+	padding-top: 110px;
+	.applet-container{
+		max-width: 520px;
+		margin: 0 auto;
+		overflow: hidden;
+		@include border-radius(4px);
+		box-shadow: $regular-box-shadow;
+		.applet-head{
+			height: 50px;
+			@include flexbox;
+			@include align-items(center);
+			@include justify-content(center);
+			@include border-radius(4px 4px 0 0);
+			background: $primary-bkg;
+			h2{
+				color: $regular-font-color;
+				font-size: $font-size-large;
+			}
+		}
+		.applet-body{
+			&:not(.no){
+				padding: 20px 20px;
+				background: $regular-bkg;
+			}
+			h3{
+				&.title1{
+					font-size: $font-size-medium;
+					text-align: center;
+				}				
+			}
+			.gutter-info{
+				.box{
+					height: 40px;
+					padding: 0 20px;
+					cursor: pointer;
+					margin-bottom: 10px;
+					color: $base-font-color-3;
+					border: 1px solid #ccc;
+					@include border-radius(4px);
+					@include flexbox;
+					@include align-items(center);
+					&.active{
+						color: $regular-font-color;
+						background: $base-bkg-3;
+					}
+					p{
+						margin: 0;
+					}
+				}
+
+			}
+		} 
+		.applet-foot{
+			height: 122px;
+			border-top: 1px solid #ebeff1;
+			background: $base-bkg-2;
+			@include flexbox;
+			@include align-items(center);
+			@include justify-content(center);
+			&.column{
+				@include flex-direction(column);
+			}
+			.btn{
+				min-width: $btn-width;
+			}
+			p{
+				&.or{
+					line-height: normal;
+				}
+			}
+		}
+	}
+}

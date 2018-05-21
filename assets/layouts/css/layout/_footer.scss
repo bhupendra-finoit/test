@@ -1,0 +1,12 @@
+.app-footer{
+	height: 72px;
+	font-size: 14px;
+	color: #fff;
+	background: #393939;
+	@include flexbox;
+	@include align-items(center);
+	@include justify-content(center);
+	p{
+		margin: 0;
+	}
+}
