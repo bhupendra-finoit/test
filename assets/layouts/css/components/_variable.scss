@@ -1,0 +1,53 @@
+//font family
+$regular-font-stack: robotoregular;
+$primary-font-stack: robotoregular;
+$secondary-font-stack: Times New Roman;
+
+//font size
+$font-size-regular: 12px;
+$font-size-medium: 16px;
+$font-size-large: 20px;
+
+//font color
+$regular-font-color: #fff;
+$primary-font-color: #505050;
+$secondary-font-color: #838383;
+$base-font-color-3: #0669a0;
+
+//background
+$regular-bkg: #fff;
+$primary-bkg: #05496e;
+$secondary-bkg: #076aa1;
+$base-bkg-1: #f4f8fb;
+$base-bkg-2: #f9fdff;
+$base-bkg-3: #0669a0;
+
+
+//blue btn
+$btn-width: 214px;
+$btn-font-size: 14px;
+$blue-btn-bkg: #41a3be;
+$blue-btn-border-color: #41a3be;
+$blue-btn-font-color: #fff;
+//hover
+$blue-btn-hover-bkg: #3493ad;
+$blue-btn-hover-border-color: #3493ad;
+$blue-btn-hover-font-color: #fff;
+
+//outline btn
+$outline-btn-color: #05496e;
+//hover
+$outline-btn-hover-color: #05496e;
+$outline-btn-hover-font-color: #fff;
+
+//input 
+$is-border-color: #d9d9d9;
+$is-border-hover-color: #d9d9d9;
+$is-focus-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(5,147,173,.6);
+$is-focus-border-color: rgba(5,147,173,.6);
+
+//shadow
+$regular-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 1px 6px rgba(0,0,0,.12);
+$primary-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+$secondary-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+$outline: 0 !important;
