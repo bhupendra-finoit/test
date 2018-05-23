@@ -1,0 +1,50 @@
+.btn{
+  font-size: 12px;
+  padding: 10px 16px;
+  font-size: $btn-font-size;
+  box-shadow: none !important;
+  @include transition(all 0.3s ease-in-out);
+  &.blue{    
+    &:not(.outline){      
+      color: $blue-btn-font-color;
+      background: $blue-btn-bkg;
+      border-color: $blue-btn-border-color;
+      &.active,
+      &:hover{
+        color: $blue-btn-font-color;
+        background: $blue-btn-hover-bkg;
+        border-color: $blue-btn-hover-border-color;
+      }
+    }
+    &.outline{
+      color: $outline-btn-color;
+      border-color: $outline-btn-color;
+      &:hover{
+        color: $outline-btn-hover-font-color;
+        border-color: $outline-btn-hover-color;
+        background: $outline-btn-hover-color;
+      }
+    }
+  }
+}
+
+.more{
+  position: relative;
+  &:before{
+    width: 100%;
+    height: 1px;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #0669a0;
+    position: absolute;
+    @include transition(all 0.3s ease-in-out);
+  }
+  &:hover{
+    &:before{
+      width: 0;
+    }
+  }
+}

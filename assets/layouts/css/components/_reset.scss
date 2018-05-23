@@ -1,0 +1,115 @@
+body {
+  font-family: $regular-font-stack;
+  line-height: 28px;
+  color: $primary-font-color;
+  font-size: $font-size-regular;
+  background: $base-bkg-1;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+img.wide{
+  width: 100%;
+}
+
+a, a:focus, a:hover{
+  outline: $outline;
+  text-decoration: none;
+}
+
+a {
+  
+}
+
+figure{
+  margin: 0;
+}
+
+h1, h2, h3{
+  margin: 0;
+  line-height: normal;
+  font-size: $font-size-medium;
+  font-family: $primary-font-stack;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.fa.pull-right {
+  margin-top: 2px;
+}
+
+.block{
+  display: block;
+}
+
+.t1{
+  text-align: left;
+}
+
+.t2{
+  text-align: center;
+}
+
+.t3{
+  text-align: right;
+}
+
+.img-circle {
+  @include border-radius(100%);
+}
+
+.btn, button, .btn, .btn-group.open .dropdown-toggle, .cell, .resource, a, button, code, div, img, input, label, li, p, pre, select, span, svg, table, td, textarea, th, ul{
+  outline: $outline;  
+}
+
+.flex-scroll, 
+.app-grow {
+  height: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+
+.row-customize{
+  margin-left: -10px;
+  margin-right: -10px;
+  .md-customize{
+    padding-left: 10px;
+    padding-right: 10px;  
+  }
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.hide{
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+    background-color: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #494949;
+}
+
