@@ -1,0 +1,75 @@
+## Solvecore
+##
+## Lines starting with two hashes (##) are comments with information.
+## Lines starting with one hash (#) are configuration parameters that can be uncommented.
+
+upstream solvecore {
+  server unix:/home/solvecore/solvecore/tmp/sockets/gunicorn.sock fail_timeout=0;
+}
+
+## Normal HTTP host
+server {
+  listen 0.0.0.0:80;
+  # listen [::]:80 ipv6only=on;
+  server_name YOUR_SERVER_FQDN; ## Replace this with something like www.solvecore.com
+  server_tokens off; ## Don't show the nginx version number, a security best practice
+  # return 301 http://www.$server_name$request_uri;
+  root /var/www/html/;
+
+  ## Increase this if you want to upload large attachments
+  client_max_body_size 20m;
+
+  ## Individual nginx logs for this Solvecore vhost
+  access_log  /var/log/nginx/solvecore_access.log;
+  error_log   /var/log/nginx/solvecore_error.log;
+
+  location / {
+    ## @solvecore is a named location for the upstream fallback, see below.
+    try_files $uri @solvecore;
+  }
+
+  location @solvecore {
+    ## If you use HTTPS make sure you disable gzip compression
+    ## to be safe against BREACH attack.
+    # gzip off;
+
+    proxy_set_header    Host                $http_host;
+    proxy_set_header    X-Real-IP           $remote_addr;
+    proxy_set_header    X-Forwarded-For     $proxy_add_x_forwarded_for;
+    proxy_set_header    X-Forwarded-Proto   $scheme;
+    proxy_set_header    X-Frame-Options     SAMEORIGIN;
+
+    ## Default 60s, Modify if your process in gUnicorn takes more than that to reply.
+    # proxy_connect_timeout 1200;
+    # proxy_send_timeout 1200;
+    proxy_read_timeout 1200;
+    # send_timeout 1200;
+
+    proxy_pass http://solvecore;
+    # proxy_pass http://localhost:9090;
+  }
+
+  ## Serve Static Assets directly through Nginx
+
+  location /static/ {
+    # root /home/solvecore/solvecore/static;
+    alias /home/solvecore/solvecore/static/;
+    gzip_static on; # to serve pre-gzipped version
+    expires max;
+    add_header Cache-Control public;
+  }
+
+  location /media/ {
+    # root /home/solvecore/solvecore/media;
+    alias /home/solvecore/solvecore/media/;
+    gzip_static on; # to serve pre-gzipped version
+    expires max;
+    add_header Cache-Control public;
+  }
+
+  error_page 500 502 503 504 /500.html;
+    location = /500.html {
+      # root /home/solvecore/solvecore/templates;
+      alias /home/solvecore/solvecore/templates/;
+    }
+}
